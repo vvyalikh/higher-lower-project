@@ -15,10 +15,10 @@ def account_info(choice):
 
 def check_answer(guess, followers_a, followers_b):
   """Takes user guess, compares with A and B, checks the answer"""
-  if a_follower_count > b_follower_count:
-    return made_choice == 'a'
+  if followers_a > followers_b:
+    return guess == 'a'
   else:
-    return made_choice == 'b'
+    return guess == 'b'
 
 continue_game = True
 score = 0
